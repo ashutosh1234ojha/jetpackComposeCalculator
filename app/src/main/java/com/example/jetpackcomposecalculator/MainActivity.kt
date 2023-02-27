@@ -12,10 +12,10 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.Color.Companion.DarkGray
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.example.jetpackcomposecalculator.ui.theme.DarkGray
 import com.example.jetpackcomposecalculator.ui.theme.JetpackComposeCalculatorTheme
 import com.example.jetpackcomposecalculator.ui.theme.MediumGray
 
@@ -35,7 +35,7 @@ class MainActivity : ComponentActivity() {
                     buttonSpacing = buttonSpacing,
                     modifier = Modifier
                         .fillMaxSize()
-                        .background(MediumGray)
+                        .background(DarkGray)
                         .padding(16.dp)
                 )
             }

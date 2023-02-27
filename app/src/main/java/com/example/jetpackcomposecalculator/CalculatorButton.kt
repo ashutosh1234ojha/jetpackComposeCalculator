@@ -9,6 +9,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.sp
 
 @Composable
@@ -20,6 +21,6 @@ fun CalculatorButton(btnText: String, modifier: Modifier, onClick: () -> Unit) {
             .clickable { onClick() }
             .then(modifier)
     ) {
-        Text(text = btnText, fontSize = 36.sp, color = Color.White)
+        Text(text = btnText, fontSize = 36.sp, color = Color.White, textAlign = TextAlign.Center)
     }
 }
