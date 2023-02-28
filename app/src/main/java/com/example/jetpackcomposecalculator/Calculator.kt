@@ -36,7 +36,8 @@ fun Calculator(
             verticalArrangement = Arrangement.spacedBy(buttonSpacing)
         ) {
 
-            Text(text = state.number1 + { state.operation ?: "" } + state.number2,
+            Text(
+                text = state.number1 + "${state.operation ?: ""}" + state.number2,
                 textAlign = TextAlign.End,
                 modifier = Modifier
                     .fillMaxWidth()
@@ -44,7 +45,8 @@ fun Calculator(
                 fontWeight = FontWeight.Light,
                 fontSize = 80.sp,
                 color = Color.White,
-                maxLines = 2)
+                maxLines = 2
+            )
 
             Row(
                 modifier = Modifier.fillMaxWidth(),
@@ -151,7 +153,6 @@ fun Calculator(
                 )
 
 
-
             }
 
             Row(
@@ -218,7 +219,6 @@ fun Calculator(
                         .aspectRatio(1f)
                         .weight(1f), onClick = { onAction(CalculatorActions.Calculate) }
                 )
-
 
 
             }
